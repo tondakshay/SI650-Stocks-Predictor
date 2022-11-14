@@ -1,13 +1,18 @@
 import tweepy
 import datetime
-api_key = "ENW9TBrKZ0iKYCb2dI0Ps6ebh"
-api_secret_key = "UjggX3y0t3yfEtkvKpFLH5FtLEF1d0WMHwsvDIDEQN8ja7R85C"
-bearer_token = "AAAAAAAAAAAAAAAAAAAAAO8hjQEAAAAAZCNfPEW5vnhPdIv8%2F%2Fa2mCl3D8w%3D3Wbj4uQvXs4uFnCxwMd3YV1wznVAspi1R2lUx6OBmwk2XLUAZW"
+import time
+consumer_key = "imwrWfsSa6ClKDtco1m5aamlL"
+consumer_secret = "Ee1l74nk8Sx9a3lgYRGRtIMsA9w9CJp6UWS5o5Hujaktb9FUgh"
+bearer_token = "AAAAAAAAAAAAAAAAAAAAANxGjQEAAAAAJRz42cJaTM0Vjftlj5qBXZbFUoQ%3Ds6sj59WRac4zF8fAn973cVazbok2TMSfcsryTIfBXVF4NERfXg"
 
-access_token = "1591903520805961728-qDdU56zonWnFvwJ1rGUmg4WD3iVp8x"
-access_token_secret = "uThL1Jm06bd7aEbxRrAZ7p0MlH682GzN0FbObzdROfBQE"
+access_token = "1591903520805961728-idXQZQJ5ETnqmTxG1MrKepmW1pWT5Z"
+access_token_secret = "oaa6utpuNwrTFfryWg2M5BQvrSN3FoKxa3XxfqIC7Z1nB"
 
+auth = tweepy.OAuth1UserHandler(
+    consumer_key, consumer_secret, access_token, access_token_secret
+)
 
+# api = tweepy.API(auth)
 client = tweepy.Client(bearer_token=bearer_token)
 
 companies = ['Apple', 
@@ -54,8 +59,9 @@ stock_names = ["AAPL",
 
 responses = []
 for company, stock_name in zip(companies, stock_names):
+    time.sleep(2)
     print ("(stock #" + stock_name + ") OR (stock " + company + ") lang:en -is:retweet -links -https")
-    responses.append(client.search_recent_tweets("(stock #" + stock_name + ") OR (stock " + company + ") lang:en -is:retweet -links -https", max_results=10))
+    responses.append(client.search_all_tweets("(stock #" + stock_name + ") OR (stock " + company + ") lang:en -is:retweet -links -https", max_results=10))
 
 for response in responses:
     tweets = response.data
