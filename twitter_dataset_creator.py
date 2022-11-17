@@ -29,7 +29,7 @@ companies = ['Apple',
              '\"JPMorgan Chase\"',
              'Walmart',
              'Chevron',
-             '\"Eli Lilly\"'
+             '\"Eli Lilly\"',
              '\"Procter & Gamble\"',
              'Mastercard',
              '\"Home Depot\"',
