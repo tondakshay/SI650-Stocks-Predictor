@@ -1,7 +1,7 @@
 # SI605-Stocks-Predictor
  Project for SI-605 by Akshay, Girish and Rakesh
 
-How to run : \n
+How to run : <\br>
 The list of companies for which the system works are :\n
              'Apple', \n
              'Microsoft', \n
