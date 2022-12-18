@@ -1,31 +1,31 @@
 # SI605-Stocks-Predictor
  Project for SI-605 by Akshay, Girish and Rakesh
 
-How to run : <\br>
-The list of companies for which the system works are :\n
-             'Apple', \n
-             'Microsoft', \n
-             'Google', \n
-             'Amazon',\n
-             'Berkshire Hathaway', \n
-             'Tesla',\n
-             '\"United Health\"',\n
-             '"Exxon Mobil"',\n
-             '\"Johnson & Johnson\"',\n
-             'Visa',\n
-             'NVIDIA',\n
-             '\"JPMorgan Chase\"', \n
-             'Walmart',\n
-             'Chevron',\n
-             '\"Eli Lilly\"',\n
-             '\"Procter & Gamble\"', \n
-             'Mastercard', \n
-             '\"Home Depot\"', \n
-             '\"Bank of America\"', \n
-             'Meta' \n
-             \n
-How to run :\n
-make run ARGS="Name of the company"\n
-\n
-Example :\n
-make run ARGS="google"\n
+How to run : <br/>
+The list of companies for which the system works are :<br/>
+             'Apple', <br/>
+             'Microsoft', <br/>
+             'Google', <br/>
+             'Amazon',<br/>
+             'Berkshire Hathaway', <br/>
+             'Tesla',<br/>
+             '\"United Health\"',<br/>
+             '"Exxon Mobil"',<br/>
+             '\"Johnson & Johnson\"',<br/>
+             'Visa',<br/>
+             'NVIDIA',<br/>
+             '\"JPMorgan Chase\"', <br/>
+             'Walmart',<br/>
+             'Chevron',<br/>
+             '\"Eli Lilly\"',<br/>
+             '\"Procter & Gamble\"', <br/>
+             'Mastercard', <br/>
+             '\"Home Depot\"', <br/>
+             '\"Bank of America\"', <br/>
+             'Meta' <br/>
+             <br/>
+How to run :<br/>
+make run ARGS="Name of the company"<br/>
+<br/>
+Example :<br/>
+make run ARGS="google"<br/>
