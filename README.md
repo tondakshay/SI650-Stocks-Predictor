@@ -1,7 +1,12 @@
 # SI605-Stocks-Predictor
  Project for SI-605 by Akshay, Girish and Rakesh
 
-How to run : <br/>
+How to run :<br/>
+make run ARGS="Name of the company"<br/>
+<br/>
+Example :<br/>
+make run ARGS="google"<br/>
+
 The list of companies for which the system works are :<br/>
              'Apple', <br/>
              'Microsoft', <br/>
@@ -24,8 +29,4 @@ The list of companies for which the system works are :<br/>
              '\"Bank of America\"', <br/>
              'Meta' <br/>
              <br/>
-How to run :<br/>
-make run ARGS="Name of the company"<br/>
-<br/>
-Example :<br/>
-make run ARGS="google"<br/>
+
